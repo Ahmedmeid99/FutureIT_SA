@@ -1,0 +1,79 @@
+/* variables */
+/* sizes */
+/*  */
+:root {
+  --muted: #64748b;
+  /* --primary: #007bff; */
+  --text:#0f172a;
+  --color-cyan-500:#00b8db;
+  --color-cyan-50:#ecfeff;
+  
+  --color-blue-700:#1447e6;
+  --color-blue-600:#155dfc;
+  --color-slate-200:#e2e8f0;
+  --header-height: 80px;
+  --footer-height: 60px;
+  --text-sm: 1.4rem;
+
+  /* --spacing: 3.2rem; */
+  --spacing: .4rem;
+  --radius: 1.04rem;
+  --transition:0.2s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /* font-family: "Poppins", sans-serif; */
+  font-family:  ui-sans-serif, system-ui, sans-serif;
+  background-color: #ddd;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+/* Small tablets */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+/* Large screens */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+}
