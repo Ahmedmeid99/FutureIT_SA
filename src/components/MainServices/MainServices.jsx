@@ -97,8 +97,8 @@ const MainServices = () => {
               </svg>
             }
             color="cyan1"
-            title="Web & Mobile Development"
-            description="Professional, engaging digital experiences across web and mobile platforms."
+            title="Cloud Solutions"
+            description="Scalable and secure cloud infrastructure, migration, and management services."
           />{" "}
           <MainServiceCard
             icon={
@@ -128,8 +128,8 @@ const MainServices = () => {
               </svg>
             }
             color="teal1"
-            title="Web & Mobile Development"
-            description="Professional, engaging digital experiences across web and mobile platforms."
+            title="Artificial Intelligence"
+            description="Leveraging AI to drive innovation, automate processes, and gain actionable insights."
           />{" "}
           <MainServiceCard
             icon={
@@ -152,8 +152,8 @@ const MainServices = () => {
               </svg>
             }
             color="green1"
-            title="Web & Mobile Development"
-            description="Professional, engaging digital experiences across web and mobile platforms."
+            title="System Integration"
+            description="Seamlessly connecting disparate systems and applications for unified operations."
           />
         </div>
       </div>
