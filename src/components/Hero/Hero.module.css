@@ -50,7 +50,7 @@ linear-gradient(125deg, #ffffff 30%, #e1e1e1cc), url(/src/assets/images/hero-bg.
     gap: 1.6rem;
 }
 button{
-    padding: 0 2.4rem;
+    padding: .5rem 2.4rem;
     font-size: 1.4rem;
     font-weight: 500;
     border-radius: 0.4rem;
@@ -147,14 +147,12 @@ width: 90%;
   .hero {
     gap: calc(var(--spacing) * 13);
   }
-   .hero p {
-    /* width: 112%; */
-    }
+   
 }
 
 @media (max-width:768px) {
    .heroContainer {
-        background: linear-gradient(155deg, #ffffff, #d6d6d6e0), url(/src/assets/images/hero-bg.webp);
+        background: linear-gradient(125deg, #ffffff 30%, #e1e1e1cc), url(/src/assets/images/hero-bg.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -162,5 +160,16 @@ width: 90%;
 
    .imageContainer img {
     display: none;
+  }
+  .hero h1{
+   font-size: 4rem;
+   line-height: 1.3;
+  }
+   .hero p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+  .ctaContainer {
+    flex-direction: column;
   }
 }
