@@ -16,7 +16,6 @@ const Hero = () => {
             <div className={styles.ctaContainer}>
               <button className={styles.mainBtn}>
                 <span>Get a Free Consultation</span>
-
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
