@@ -159,4 +159,8 @@ width: 90%;
     background-position: center;
     background-size: cover;
    }
+
+   .imageContainer img {
+    display: none;
+  }
 }

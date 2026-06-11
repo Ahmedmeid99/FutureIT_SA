@@ -1,0 +1,21 @@
+.heroTitleContainer{
+text-align: center;
+margin-bottom: 6.4rem;
+}
+.heroTitle{
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--text);
+    font-family: "Poppins", sans-serif;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.6rem;
+}
+.heroSubtitle{
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--muted);
+    max-width: 77rem;
+    margin: auto;
+}

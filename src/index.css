@@ -2,6 +2,7 @@
 /* sizes */
 /*  */
 :root {
+  --white: #ffffff;
   --muted: #64748b;
   /* --primary: #007bff; */
   --text:#0f172a;
@@ -18,7 +19,8 @@
   /* --spacing: 3.2rem; */
   --spacing: .4rem;
   --radius: 1.04rem;
-  --transition:0.2s ease;
+  --transition:0.3s ease;
+  --border: #e2e8f0;
 }
 
 * {
@@ -34,7 +36,7 @@ html {
 body {
   /* font-family: "Poppins", sans-serif; */
   font-family:  ui-sans-serif, system-ui, sans-serif;
-  background-color: #ddd;
+  background-color: var(--white);
 }
 
 .container {

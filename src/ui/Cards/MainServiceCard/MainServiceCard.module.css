@@ -1,0 +1,110 @@
+.mainServiceCard {
+    border: 1px solid var(--border);
+    padding: 2.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2.4rem;
+    box-shadow: 1px 14px -4px rgb(153 153 153 / 25%);
+    border-radius: calc(var(--radius) + 4px);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.mainServiceCard:hover {
+    box-shadow: 0px 10px 20px rgb(153 153 153 / 25%);
+    border-color: var(--color-cyan-500);
+    translate: 0 -4px;
+}
+.mainServiceCard:hover .icon {
+    /* background: linear-gradient(135deg, #0e6cdc, #1cb7ff); */
+    transform: scale(1.07);
+}
+
+.icon {
+    /* padding-inline: 2.4rem; */
+    margin: 0 2.4rem;
+    width: 5.22rem;
+    height: 5.22rem;
+    border-radius: var(--radius);
+    display: grid;
+    place-items: center;
+    color: white;
+    font-weight: 800;
+    font-size: 1.8rem;
+    transition: var(--transition);
+    background:linear-gradient(
+    -45deg,
+    var(--color-blue-600),
+    var(--color-cyan-500)
+  );
+}
+
+.icon.blue1 {
+  background: linear-gradient(
+    -45deg,
+    #2563eb,
+    #06b6d4
+  );
+}
+
+.icon.blue2 {
+  background: linear-gradient(
+    -45deg,
+    #3b82f6,
+    #22d3ee
+  );
+}
+
+.icon.blue3 {
+  background: linear-gradient(
+    -45deg,
+    #38bdf8,
+    #60a5fa
+  );
+}
+
+.icon.cyan1 {
+  background: linear-gradient(
+    -45deg,
+    #06b6d4,
+    #67e8f9
+  );
+}
+
+.icon.teal1 {
+  background: linear-gradient(
+    -45deg,
+    #14b8a6,
+    #2dd4bf
+  );
+}
+
+.icon.green1 {
+  background: linear-gradient(
+    -45deg,
+    #0d9488,
+    #22c55e
+  );
+}
+
+.icon svg {
+    width: 2.4rem;
+    height: 2.4rem;
+    color: white;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text);
+    font-family: Poppins, sans-serif;
+        padding-inline: 2.4rem;
+
+}
+
+.description {
+    font-size: 1.6rem;
+    color: var(--muted);
+    padding: 0 2.4rem;
+    /* margin-top: .8rem; */
+}
