@@ -1,0 +1,88 @@
+.footer{
+    background-color: var(--color-slate-900);
+    padding: 4.8rem 0;
+    color: var(--white);
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: calc(var(--spacing) * 8);
+        padding-bottom: calc(var(--spacing) * 8);
+        border-bottom:1px solid var(--color-slate-800);
+}
+.info{
+
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+.logo .brand_mark {
+    width: 32px;
+    height: 32px;
+    border-radius: .65rem;
+    display: grid;
+    place-items: center;
+      background: linear-gradient(
+    -45deg,
+    #3b82f6,
+    #22d3ee
+  );
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+.logo svg{
+    color: var(--white);
+    width: 2rem;
+    height: 2rem;
+}
+.logo .text {
+  font-family: var(--font-poppins);
+  font-weight: 700;
+    font-size: 1.6rem;
+    white-space: nowrap;
+        color: var(--white);
+
+}
+
+.col{
+
+}
+.label{
+font-family: var(--font-poppins);
+  font-weight: 600;
+    font-size: 1.6rem;
+    white-space: nowrap;
+    margin-bottom: 1.6rem;
+}
+
+.footer li{
+    margin-bottom: .8rem;
+}
+.footer li a, p,.copyRight{
+ color: var(--color-slate-400);
+ font-size: 1.4rem;
+ font-weight: 400;
+ transition: var(--transition);
+ font-family: var(--font-sans);
+}
+
+.footer li a:hover{
+    color: var(--color-cyan-400);
+}
+
+.copyRight{
+    padding-top: 3.2rem;
+    width: fit-content;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+  .content {
+    grid-template-columns:1fr;
+  }
+}

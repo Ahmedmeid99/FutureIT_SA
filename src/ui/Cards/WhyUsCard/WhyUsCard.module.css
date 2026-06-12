@@ -1,0 +1,38 @@
+.ServiceCard {
+    border: 1px solid var(--border);
+    padding: 2.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+         gap: calc(var(--spacing) * 6);
+    box-shadow: 0px 0px 1px 0px rgb(153 153 153 / 50%);
+    border-radius: calc(var(--radius) + 4px);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.ServiceCard:hover {
+    box-shadow: 0px 12px 15px -4px rgb(153 153 153 / 25%);
+    /* box-shadow: rgba(153, 153, 153, 0.5) 0px 3px 7px; */
+    border-color: var(--color-cyan-500);
+    /* translate: 0 -4px; */
+}
+
+.title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text);
+    font-family: var(--font-poppins);
+    padding-inline: calc(var(--spacing) * 6);
+    /* padding-bottom: 2.4rem; */
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+}
+
+.description {
+    font-size: 1.6rem;
+    color: var(--muted);
+    padding: 0 2.4rem;
+    /* margin-top: .8rem; */
+}
