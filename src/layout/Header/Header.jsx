@@ -1,13 +1,30 @@
 import styles from "./Header.module.css";
 import { useLanguage } from "../../context/LanguageContext";
 
+const scrollToSection = (id) => {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
+
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+};
+
 const Header = () => {
   const { lang, toggleLanguage, t } = useLanguage();
 
   return (
     <header>
       <nav className={styles.navbar + " container"}>
-        <div className={styles.logo}>
+        {/* Logo — click scrolls to top */}
+        <button
+          className={styles.logo}
+          onClick={scrollToTop}
+          aria-label="Go to top"
+          style={{ background: "none", border: "none", cursor: "pointer", padding: 0 }}
+        >
           <span className={styles.brand_mark}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -19,8 +36,6 @@ const Header = () => {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="lucide lucide-globe w-6 h-6 text-white"
-              data-loc="client/src/pages/Home.tsx:88"
             >
               <circle cx="12" cy="12" r="10"></circle>
               <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
@@ -28,26 +43,44 @@ const Header = () => {
             </svg>
           </span>
           <span className={styles.text}>{t.header.brand}</span>
-        </div>
+        </button>
+
         <div className={styles.navActions}>
           <ul className={styles.navLinks}>
             <li>
-              <a href="#services" className={styles.link}>
+              <a
+                href="#services"
+                onClick={(e) => { e.preventDefault(); scrollToSection("services"); }}
+                className={styles.link}
+              >
                 {t.header.services}
               </a>
             </li>
             <li>
-              <a href="#about" className={styles.link}>
+              <a
+                href="#about"
+                onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
+                className={styles.link}
+              >
                 {t.header.about}
               </a>
             </li>
             <li>
-              <a href="#contact" className={styles.link}>
+              <a
+                href="#contact"
+                onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
+                className={styles.link}
+              >
                 {t.header.contact}
               </a>
             </li>
           </ul>
-          <button onClick={toggleLanguage} className={styles.langBtn} aria-label="Toggle language">
+
+          <button
+            onClick={toggleLanguage}
+            className={styles.langBtn}
+            aria-label="Toggle language"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"

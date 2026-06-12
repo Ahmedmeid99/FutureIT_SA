@@ -7,7 +7,7 @@ const Contact = () => {
   const { t } = useLanguage();
 
   return (
-    <div className={styles.contact}>
+    <div className={styles.contact} id="contact">
       <div className="container">
         <Section>
           <HeroTitle

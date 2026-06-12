@@ -8,7 +8,7 @@ const WhyUs = () => {
   const { t } = useLanguage();
 
   return (
-    <div className={styles.whyUs}>
+    <div className={styles.whyUs} id="why-us">
       <Section>
         <div className="container">
           <HeroTitle title={t.whyUs.title} />

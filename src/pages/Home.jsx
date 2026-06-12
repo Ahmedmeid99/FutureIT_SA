@@ -7,6 +7,7 @@ import Services from "../components/Services/Services";
 import WhyUs from "../components/WhyUs/WhyUs";
 import Footer from "../layout/Footer/Footer";
 import Header from "../layout/Header/Header";
+import ScrollToTop from "../ui/ScrollToTop/ScrollToTop";
 import { useLanguage } from "../context/LanguageContext";
 
 const Home = () => {
@@ -42,6 +43,7 @@ const Home = () => {
       <WhyUs />
       <Contact />
       <Footer />
+      <ScrollToTop />
       {/* 
     {Seactions}
     header

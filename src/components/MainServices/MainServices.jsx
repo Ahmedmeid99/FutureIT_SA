@@ -9,7 +9,7 @@ const MainServices = () => {
 
   return (
     <Section>
-      <div className={styles.mainServices + " container"}>
+      <div className={styles.mainServices + " container"} id="services">
         <HeroTitle
           title={t.mainServices.title}
           subtitle={t.mainServices.subtitle}

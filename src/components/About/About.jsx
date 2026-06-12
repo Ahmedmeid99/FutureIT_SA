@@ -7,7 +7,7 @@ const About = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="container">
+    <div className="container" id="about">
       <Section>
         <div className={styles.about}>
           <div className={styles.text}>
@@ -18,12 +18,20 @@ const About = () => {
             </article>
             <div className={styles.stats}>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>{t.about.satisfactionRate}</span>
-                <span className={styles.statLabel}>{t.about.satisfactionLabel}</span>
+                <span className={styles.statNumber}>
+                  {t.about.satisfactionRate}
+                </span>
+                <span className={styles.statLabel}>
+                  {t.about.satisfactionLabel}
+                </span>
               </div>
               <div className={styles.statItem}>
-                <span className={styles.statNumber}>{t.about.categoriesCount}</span>
-                <span className={styles.statLabel}>{t.about.categoriesLabel}</span>
+                <span className={styles.statNumber}>
+                  {t.about.categoriesCount}
+                </span>
+                <span className={styles.statLabel}>
+                  {t.about.categoriesLabel}
+                </span>
               </div>
             </div>
           </div>
