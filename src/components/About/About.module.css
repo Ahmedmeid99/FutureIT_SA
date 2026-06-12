@@ -85,5 +85,8 @@ border-radius: calc(var(--radius) + 4px);
     .about{
         grid-template-columns: 1fr;
     }
+     [dir="rtl"] .text h2{
+        font-size: 4rem;
+     }
 
 }

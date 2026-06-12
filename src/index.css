@@ -46,7 +46,7 @@ html[lang="ar"] {
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 50%;
 }
 
 body {
@@ -80,6 +80,9 @@ ul li a{
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  html {
+  font-size: 62.5%;
   }
 }
 
