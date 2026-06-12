@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://itservices-sa.com/sitemap.xml

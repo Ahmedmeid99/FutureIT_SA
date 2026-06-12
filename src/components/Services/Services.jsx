@@ -8,7 +8,7 @@ const Services = () => {
   return (
     <div className="container">
       <section className={styles.services}>
-        <h3 className={styles.title}>{t.services.title}</h3>
+        <h2 className={styles.title}>{t.services.title}</h2>
 
         <div className={styles.serviceCards}>
           {t.services.list.map((service, index) => (

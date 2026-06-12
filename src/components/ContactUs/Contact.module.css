@@ -8,7 +8,7 @@
     justify-content: center;
     gap: 1.6rem;
 }
-button{
+ .mainBtn ,.lightBtn{
     padding: 2px 2.4rem;
         /* padding-inline: calc(var(--spacing) * 4); */
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;

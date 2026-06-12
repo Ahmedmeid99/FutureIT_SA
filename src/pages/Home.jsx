@@ -8,6 +8,7 @@ import WhyUs from "../components/WhyUs/WhyUs";
 import Footer from "../layout/Footer/Footer";
 import Header from "../layout/Header/Header";
 import ScrollToTop from "../ui/ScrollToTop/ScrollToTop";
+import SEO from "../components/SEO/SEO";
 import { useLanguage } from "../context/LanguageContext";
 
 const Home = () => {
@@ -35,6 +36,7 @@ const Home = () => {
   }, [lang]);
   return (
     <div className="home">
+      <SEO />
       <Header />
       <Hero />
       <MainServices />

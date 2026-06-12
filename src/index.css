@@ -60,8 +60,8 @@ body {
 ul{
   list-style: none;
 }
-ul li a{
-  text-decoration: none;
+ a{
+  text-decoration: none !important;
 }
 .container {
   width: 100%;

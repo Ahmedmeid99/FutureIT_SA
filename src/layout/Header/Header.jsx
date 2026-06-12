@@ -1,30 +1,13 @@
 import styles from "./Header.module.css";
 import { useLanguage } from "../../context/LanguageContext";
 
-const scrollToSection = (id) => {
-  const el = document.getElementById(id);
-  if (el) {
-    el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-};
-
-const scrollToTop = () => {
-  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-};
-
 const Header = () => {
   const { lang, toggleLanguage, t } = useLanguage();
 
   return (
     <header>
       <nav className={styles.navbar + " container"}>
-        {/* Logo — click scrolls to top */}
-        <button
-          className={styles.logo}
-          onClick={scrollToTop}
-          aria-label="Go to top"
-          style={{ background: "none", border: "none", cursor: "pointer", padding: 0 }}
-        >
+        <a href="#" className={styles.logo} aria-label="Go to top">
           <span className={styles.brand_mark}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,34 +26,22 @@ const Header = () => {
             </svg>
           </span>
           <span className={styles.text}>{t.header.brand}</span>
-        </button>
+        </a>
 
         <div className={styles.navActions}>
           <ul className={styles.navLinks}>
             <li>
-              <a
-                href="#services"
-                onClick={(e) => { e.preventDefault(); scrollToSection("services"); }}
-                className={styles.link}
-              >
+              <a href="#services" className={styles.link}>
                 {t.header.services}
               </a>
             </li>
             <li>
-              <a
-                href="#about"
-                onClick={(e) => { e.preventDefault(); scrollToSection("about"); }}
-                className={styles.link}
-              >
+              <a href="#about" className={styles.link}>
                 {t.header.about}
               </a>
             </li>
             <li>
-              <a
-                href="#contact"
-                onClick={(e) => { e.preventDefault(); scrollToSection("contact"); }}
-                className={styles.link}
-              >
+              <a href="#contact" className={styles.link}>
                 {t.header.contact}
               </a>
             </li>

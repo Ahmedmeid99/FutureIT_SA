@@ -32,12 +32,13 @@ header {
     #3b82f6,
     #22d3ee
   );
-    color: white;
+    color: var(--white);
     font-weight: 800;
     font-size: 1.8rem;
 }
 .logo .text {
   font-family: var(--font-poppins);
+  color: var(--text);
   font-weight: 700;
   font-size: 1.8rem;
   white-space: nowrap;

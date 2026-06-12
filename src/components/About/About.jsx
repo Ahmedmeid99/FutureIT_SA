@@ -4,7 +4,7 @@ import styles from "./About.module.css";
 import { useLanguage } from "../../context/LanguageContext";
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <div className="container" id="about">
@@ -36,7 +36,10 @@ const About = () => {
             </div>
           </div>
           <div className={styles.imageContainer}>
-            <img src={image} alt="IT Services" />
+            <img
+              src={image}
+              alt={lang === "en" ? "About IT Services SA - Office workspace and tech experts" : "حول خدمات تقنية المعلومات SA - مساحة العمل والخبراء التقنيين"}
+            />
           </div>
         </div>
       </Section>
