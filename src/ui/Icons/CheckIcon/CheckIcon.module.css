@@ -1,6 +1,6 @@
 .circleCheck {
     width: 2rem;
     height: 2rem;
-    flex-basis: 2rem;
+    flex-shrink: 0;
     color: var(--color-cyan-500);
 }

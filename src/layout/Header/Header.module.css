@@ -70,6 +70,9 @@ header {
   .navLinks {
     display: none;
   }
+   [dir="rtl"] .logo .text {
+  font-size: 1.5rem;
+  }
 }
 
 .navActions {

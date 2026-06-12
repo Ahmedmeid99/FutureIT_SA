@@ -46,7 +46,8 @@ html[lang="ar"] {
 }
 
 html {
-  font-size: 50%;
+  /* font-size: 50%; */
+  font-size: 56.25%;
 }
 
 body {
