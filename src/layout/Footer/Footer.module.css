@@ -63,7 +63,7 @@ font-family: var(--font-poppins);
 .footer li{
     margin-bottom: .8rem;
 }
-.footer li a, p,.copyRight{
+.footer li a, .footer p,.copyRight{
  color: var(--color-slate-400);
  font-size: 1.4rem;
  font-weight: 400;

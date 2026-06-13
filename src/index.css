@@ -25,7 +25,7 @@
   --transition:0.3s ease;
   --border: #e2e8f0;
 
-  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: ui-sans-serif, system-ui, sans-serif;
   --font-poppins: "Poppins", sans-serif; 
 }
 
